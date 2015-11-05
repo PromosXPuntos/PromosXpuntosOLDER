@@ -13,19 +13,20 @@
     <link rel="apple-touch-icon" href="/qweqq/assets/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/qweqq/assets/apple-touch-icon-retina.png">
 
-    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css',file: 'bootstrap.min.css')}">
-    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css',file: 'signin.css')}">
-    <script src="/qweqq/assets/jquery/jquery-1.11.1.js?compile=false" type="text/javascript" >
-    </script><script src="/qweqq/assets/jquery.js?compile=false" type="text/javascript" ></script>
-    <script src="/qweqq/assets/application.js?compile=false" type="text/javascript" ></script>
-
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'bootstrap.min.css')}">
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'signin.css')}">
+    <script src="/qweqq/assets/jquery/jquery-1.11.1.js?compile=false" type="text/javascript">
+    </script><script src="/qweqq/assets/jquery.js?compile=false" type="text/javascript"></script>
+    <script src="/qweqq/assets/application.js?compile=false" type="text/javascript"></script>
 
 </head>
+
 <body>
 <div class="container">
     <div id="create-standardUser" role="main">
-        <h1>Registro de usuario </h1>
-        <form class="form-signin" action="/qweqq/standardUser/save" method="post" >
+        <h1>Registro de usuario</h1>
+
+        <form class="form-signin" action="/qweqq/standardUser/save" method="post">
             <fieldset class="form">
 
                 <div class="alert alert-danger" role="alert">
@@ -37,7 +38,8 @@
                         Name
                         <span class="required-indicator">*</span>
                     </label>
-                    <input type="text" name="name" class="form-control" placeholder="Nombre" required="" value="" id="name" />
+                    <input type="text" name="name" class="form-control" placeholder="Nombre" required="" value=""
+                           id="name"/>
 
                 </div>
 
@@ -46,7 +48,8 @@
                         Last Name
                         <span class="required-indicator">*</span>
                     </label>
-                    <input type="text" name="lastName" class="form-control" placeholder="Apellido" required="" value="" id="lastName" />
+                    <input type="text" name="lastName" class="form-control" placeholder="Apellido" required="" value=""
+                           id="lastName"/>
 
                 </div>
 
@@ -55,7 +58,8 @@
                         Email
                         <span class="required-indicator">*</span>
                     </label>
-                    <input type="email" name="email" class="form-control" placeholder="Correo electronico" required="" value="" id="email" />
+                    <input type="email" name="email" class="form-control" placeholder="Correo electronico" required=""
+                           value="" id="email"/>
 
                 </div>
 
@@ -64,7 +68,8 @@
                         Nickname
                         <span class="required-indicator">*</span>
                     </label>
-                    <input type="text" name="nickname" class="form-control" placeholder="Nombre de usuario" maxlength="20" required="" value="" id="nickname" />
+                    <input type="text" name="nickname" class="form-control" placeholder="Nombre de usuario"
+                           maxlength="20" required="" value="" id="nickname"/>
 
                 </div>
 
@@ -73,7 +78,8 @@
                         Password
                         <span class="required-indicator">*</span>
                     </label>
-                    <input type="password" name="password" class="form-control" placeholder="Contraseña" pattern=".{7,20}" maxlength="20" required="" value="" id="password" />
+                    <input type="password" name="password" class="form-control" placeholder="Contraseña"
+                           pattern=".{7,20}" maxlength="20" required="" value="" id="password"/>
 
                 </div>
 
@@ -82,9 +88,9 @@
                         Gender
                         <span class="required-indicator">*</span>
                     </label>
-                    <select name="gender" required="" id="gender" >
-                        <option value="male" >male</option>
-                        <option value="female" >female</option>
+                    <select name="gender" required="" id="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
                     </select>
 
                 </div>
@@ -94,7 +100,8 @@
                         Telephone
                         <span class="required-indicator">*</span>
                     </label>
-                    <input type="text" name="telephone" class="form-control" placeholder="Telefono" pattern=".{7,10}" maxlength="10" required="" value="" id="telephone" />
+                    <input type="text" name="telephone" class="form-control" placeholder="Telefono" pattern=".{7,10}"
+                           maxlength="10" required="" value="" id="telephone"/>
 
                 </div>
 
@@ -103,9 +110,8 @@
                         Birthday
                         <span class="required-indicator">*</span>
                     </label>
-                    <input type="hidden" name="birthday" value="date.struct" />
-                    <select name="birthday_day" id="birthday_day"
-                    ><option value="1" selected="selected">1</option>
+                    <input type="hidden" name="birthday" value="date.struct"/>
+                    <select name="birthday_day" id="birthday_day"><option value="1" selected="selected">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -137,8 +143,7 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
-                    <select name="birthday_month" id="birthday_month"
-                    ><option value="1">enero</option>
+                    <select name="birthday_month" id="birthday_month"><option value="1">enero</option>
                         <option value="2">febrero</option>
                         <option value="3">marzo</option>
                         <option value="4">abril</option>
@@ -151,8 +156,7 @@
                         <option value="11" selected="selected">noviembre</option>
                         <option value="12">diciembre</option>
                     </select>
-                    <select name="birthday_year" id="birthday_year"
-                    ><option value="2115">2115</option>
+                    <select name="birthday_year" id="birthday_year"><option value="2115">2115</option>
                         <option value="2114">2114</option>
                         <option value="2113">2113</option>
                         <option value="2112">2112</option>
@@ -355,13 +359,12 @@
                         <option value="1915">1915</option>
                     </select>
 
-
                 </div>
-
 
             </fieldset>
             <fieldset>
-                <input type="submit" name="create" class="btn btn-lg btn-primary btn-block" value="Registrarse" id="create" />
+                <input type="submit" name="create" class="btn btn-lg btn-primary btn-block" value="Registrarse"
+                       id="create"/>
             </fieldset>
         </form>
     </div>
