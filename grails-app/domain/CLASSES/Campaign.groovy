@@ -1,13 +1,15 @@
 package CLASSES
 
-class Campaign extends Offer {
+import org.grails.databinding.BindingFormat
+
+class Campaign{
+
     String campaignName
     String description
     byte [] picture
-    Date dueDate
-    Date creationDate
+    Date dueDateCampaign
+    Date creationDateCampaign
     int point
-    String pictureType
 
     static belongsTo = [
             customer : Customer
@@ -16,14 +18,10 @@ class Campaign extends Offer {
     static constraints = {
         campaignName(blank: false,unique: true,minSize: 5,maxSize: 30)
         description(blank: false, unique: true, minSize: 30)
-        picture(nullable:true, maxSize: 3145728 /* 16K */)
-        creationDate(blank: false)
-        dueDate(blank: false, validator: {return it > creationDate})
+        picture(maxSize: 3145728 /* 16K */)
         point(blank:false, min: 1)
-        pictureType(nullable:true)
+        creationDateCampaign(nullable: true)
+        dueDateCampaign(blank: false)
     }
 
-    static mapping = {
-        table('campaign')
-    }
 }
