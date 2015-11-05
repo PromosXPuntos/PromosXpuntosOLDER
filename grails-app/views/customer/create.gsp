@@ -2,9 +2,6 @@
 	<title>Promos x Puntos - Empresas</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<script src="/qweqq/assets/html5shiv.js?compile=false" type="text/javascript" ></script>
 	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css',file: 'main1.css')}">
 	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css',file: 'ie9.css')}">
@@ -95,13 +92,6 @@
 </footer>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
-
-
 
 <nav id="nav">
 	<ul class="links">
