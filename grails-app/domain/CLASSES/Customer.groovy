@@ -10,9 +10,7 @@ class Customer {
     static hasMany = [
             users : CustomerUser,
             rewards : Reward,
-            campaigns : Campaign,
             establishment : Establishment
-
     ]
 
     static constraints = {

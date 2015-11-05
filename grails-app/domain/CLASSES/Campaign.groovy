@@ -11,9 +11,6 @@ class Campaign{
     Date creationDateCampaign
     int point
 
-    static belongsTo = [
-            customer : Customer
-    ]
 
     static constraints = {
         campaignName(blank: false,unique: true,minSize: 5,maxSize: 30)
