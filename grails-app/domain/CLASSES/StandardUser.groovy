@@ -10,6 +10,7 @@ class StandardUser extends User{
             redeemedRewards : Reward,
             shopRecords : ShopRecord
     ]
+
     static constraints = {
         gender(inList: ['male', 'female'])
         telephone(size: 7..10)
