@@ -10,7 +10,6 @@ class CampaignController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
 
-
     def index(Integer max) {
         if (session.CampaignSession) {
             redirect(controller: 'campaign', action: 'profile', params: [campaignName: "${session.CampaignSession}"])
