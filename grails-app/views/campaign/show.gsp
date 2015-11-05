@@ -22,26 +22,36 @@
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<ol class="property-list campaign">
-			
-				<g:if test="${campaignInstance?.dueDateCampaign}">
-				<li class="fieldcontain">
-					<span id="dueDateCampaign-label" class="property-label"><g:message code="campaign.dueDateCampaign.label" default="Due Date" /></span>
-					
-						<span class="property-value" aria-labelledby="dueDateCampaign-label"><g:formatDate date="${campaignInstance?.dueDateCampaign}" /></span>
-					
-				</li>
+
+				<g:if test="${campaignInstance?.campaignName}">
+					<li class="fieldcontain">
+						<span id="campaignName-label" class="property-label"><g:message code="campaign.description.label" default="Campaign Name" /></span>
+
+						<span class="property-value" aria-labelledby="campaignName-label"><g:fieldValue bean="${campaignInstance}" field="campaignName"/></span>
+					</li>
 				</g:if>
-			
+
+
 				<g:if test="${campaignInstance?.description}">
 				<li class="fieldcontain">
 					<span id="description-label" class="property-label"><g:message code="campaign.description.label" default="Description" /></span>
 					
 						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${campaignInstance}" field="description"/></span>
-					
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													</li>
+				</li>
 				</g:if>
-			
-				<g:if test="${campaignInstance?.creationDateCampaign}">
+
+
+                <g:if test="${campaignInstance?.point}">
+                    <li class="fieldcontain">
+                        <span id="point-label" class="property-label"><g:message code="campaign.creationDateCampaign.label" default="Points" /></span>
+
+                        <span class="property-value" aria-labelledby="point-label"><g:formatNumber number="${campaignInstance?.point}" field="point" /></span>
+
+                    </li>
+                </g:if>
+
+
+                <g:if test="${campaignInstance?.creationDateCampaign}">
 				<li class="fieldcontain">
 					<span id="creationDateCampaign-label" class="property-label"><g:message code="campaign.creationDateCampaign.label" default="Creation Date" /></span>
 					
@@ -50,6 +60,24 @@
 				</li>
 				</g:if>
 
+				<g:if test="${campaignInstance?.dueDateCampaign}">
+					<li class="fieldcontain">
+						<span id="dueDateCampaign-label" class="property-label"><g:message code="campaign.dueDateCampaign.label" default="Due Date" /></span>
+
+						<span class="property-value" aria-labelledby="dueDateCampaign-label"><g:formatDate date="${campaignInstance?.dueDateCampaign}" /></span>
+
+					</li>
+				</g:if>
+
+
+                <g:if test="${campaignInstance?.picture}">
+                    <li class="fieldcontain">
+                        <span id="picture-label" class="property-label"><g:message code="campaign.dueDateCampaign.label" default="Picture" /></span>
+
+                        <span class="property-value" aria-labelledby="picture-label"><g:fieldValue bean="${campaignInstance?.picture}" field="picture" /></span>
+
+                    </li>
+                </g:if>
 			
 
 			
