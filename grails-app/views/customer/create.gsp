@@ -8,7 +8,6 @@
 </head>
 <body class="landing">
 
-
 <!-- Header -->
 <header id="header" class="alt">
 	<h1><a href="index.html">Promos x Puntos</a></h1>
